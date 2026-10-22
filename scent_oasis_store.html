@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scent Oasis - Tasmanian & Gulf Perfumes Kenya</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body class="bg-neutral-50 font-sans text-neutral-800 scroll-smooth">
+
+    <!-- Navigation Bar -->
+    <nav class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-neutral-100 shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <div class="flex items-center gap-3">
+                <span class="text-3xl text-amber-700"><i class="fa-solid fa-droplet"></i></span>
+                <div>
+                    <span class="text-2xl font-serif font-semibold tracking-wide text-neutral-900 block">SCENT OASIS</span>
+                    <span class="text-xs tracking-widest text-neutral-400 uppercase">Tasmania & Gulf Fragrances</span>
+                </div>
+            </div>
+            <div class="flex items-center gap-6">
+                <a href="#shop" class="text-neutral-600 hover:text-amber-700 transition font-medium">Shop</a>
+                <a href="#reviews" class="text-neutral-600 hover:text-amber-700 transition font-medium">Reviews</a>
+                <a href="#contact" class="text-neutral-600 hover:text-amber-700 transition font-medium">Contact Us</a>
+                <a href="#checkout" class="text-neutral-600 hover:text-amber-700 transition font-medium">Order</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="relative bg-neutral-900 text-white py-24 overflow-hidden">
+        <div class="absolute inset-0 bg-[radial-gradient(circle_at_top_right,_var(--tw-gradient-stops))] from-amber-900/40 via-neutral-900 to-neutral-900"></div>
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col items-center text-center">
+            <span class="text-amber-400 font-semibold tracking-widest uppercase text-xs mb-3">Luxury Global Fragrances Localized for Kenya</span>
+            <h1 class="text-4xl md:text-6xl font-serif font-light mb-6 leading-tight max-w-3xl">
+                Primal Tasmanian Forests Meet Majestic Gulf Oudh
+            </h1>
+            <p class="text-neutral-300 text-lg md:text-xl max-w-2xl mb-10 font-light">
+                Experience luxury lavender and native pines from Tasmania, alongside opulent amber and traditional wood scents from the Arabian Gulf. Delivered directly to your doorstep in any Kenyan County.
+            </p>
+            <div class="flex flex-wrap gap-4 justify-center">
+                <a href="#shop" class="bg-amber-500 text-neutral-900 px-8 py-3.5 rounded-full hover:bg-amber-400 transition font-semibold shadow-lg shadow-amber-500/20">Explore Collection</a>
+                <a href="#checkout" class="border border-white/20 hover:bg-white/10 px-8 py-3.5 rounded-full transition font-semibold">Calculate Delivery</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Product Section -->
+    <main id="shop" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+        <div class="text-center mb-6">
+            <h2 class="text-3xl font-serif font-semibold text-neutral-900 mb-2">Our Signature Curation</h2>
+            <div class="w-16 h-1 bg-amber-600 mx-auto rounded-full mb-8"></div>
+        </div>
+
+        <!-- Interactive Search Bar -->
+        <div class="max-w-md mx-auto mb-12">
+            <div class="relative">
+                <span class="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none text-neutral-400">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </span>
+                <input type="text" id="search-input" placeholder="Search by perfume name, origin or key notes..." class="w-full pl-11 pr-5 py-3.5 bg-white border border-neutral-200 rounded-full focus:outline-none focus:ring-2 focus:ring-amber-500/30 focus:border-amber-600 transition shadow-sm text-sm">
+            </div>
+        </div>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8" id="product-grid">
+            <!-- Card 1 -->
+            <div class="product-card bg-white rounded-2xl overflow-hidden border border-neutral-100 hover:shadow-xl transition flex flex-col h-full" data-name="Tasmanian Lavender Mist" data-origin="Tasmanian" data-notes="lavender mist sweet clean">
+                <div class="bg-gradient-to-tr from-purple-100 to-indigo-50 h-56 flex items-center justify-center relative">
+                    <span class="absolute top-4 left-4 bg-purple-600 text-white text-[10px] uppercase font-bold px-2.5 py-1 rounded-full">Tasmanian</span>
+                    <i class="fa-solid fa-seedling text-purple-400 text-5xl"></i>
+                </div>
+                <div class="p-6 flex flex-col flex-grow">
+                    <h3 class="font-serif font-bold text-lg mb-1">Tasmanian Lavender Mist</h3>
+                    <p class="text-xs text-neutral-400 mb-3">Native Lavender Fields</p>
+                    <p class="text-sm text-neutral-500 flex-grow mb-4">Fresh organic lavender harvested from pristine fields in Southern Tasmania.</p>
+                    <div class="flex items-center justify-between mt-auto">
+                        <span class="text-xl font-bold text-neutral-950">KES 11,050</span>
+                        <button class="p-2.5 bg-neutral-100 rounded-full hover:bg-amber-100 text-neutral-900 hover:text-amber-800 transition"><i class="fa-solid fa-cart-plus"></i></button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="product-card bg-white rounded-2xl overflow-hidden border border-neutral-100 hover:shadow-xl transition flex flex-col h-full" data-name="Oudh Al Khaleej" data-origin="Gulf" data-notes="agarwood oudh rich royal">
+                <div class="bg-gradient-to-tr from-amber-100 to-orange-50 h-56 flex items-center justify-center relative">
+                    <span class="absolute top-4 left-4 bg-amber-700 text-white text-[10px] uppercase font-bold px-2.5 py-1 rounded-full">Gulf</span>
+                    <i class="fa-solid fa-fire text-amber-500 text-5xl"></i>
+                </div>
+                <div class="p-6 flex flex-col flex-grow">
+                    <h3 class="font-serif font-bold text-lg mb-1">Oudh Al Khaleej</h3>
+                    <p class="text-xs text-neutral-400 mb-3">Rich Royal Agarwood</p>
+                    <p class="text-sm text-neutral-500 flex-grow mb-4">Opulent, majestic, and long-lasting woody oil derived from traditional Arabian reserves.</p>
+                    <div class="flex items-center justify-between mt-auto">
+                        <span class="text-xl font-bold text-neutral-950">KES 19,500</span>
+                        <button class="p-2.5 bg-neutral-100 rounded-full hover:bg-amber-100 text-neutral-900 hover:text-amber-800 transition"><i class="fa-solid fa-cart-plus"></i></button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="product-card bg-white rounded-2xl overflow-hidden border border-neutral-100 hover:shadow-xl transition flex flex-col h-full" data-name="Huon Pine Essence" data-origin="Tasmanian" data-notes="huon pine ancient forest wood earthy">
+                <div class="bg-gradient-to-tr from-emerald-100 to-teal-50 h-56 flex items-center justify-center relative">
+                    <span class="absolute top-4 left-4 bg-emerald-700 text-white text-[10px] uppercase font-bold px-2.5 py-1 rounded-full">Tasmanian</span>
+                    <i class="fa-solid fa-tree text-emerald-500 text-5xl"></i>
+                </div>
+                <div class="p-6 flex flex-col flex-grow">
+                    <h3 class="font-serif font-bold text-lg mb-1">Huon Pine Essence</h3>
+                    <p class="text-xs text-neutral-400 mb-3">Ancient Forest Wood</p>
+                    <p class="text-sm text-neutral-500 flex-grow mb-4">Earthy, fresh, and uniquely warm scent capturing Tasmania's oldest evergreen groves.</p>
+                    <div class="flex items-center justify-between mt-auto">
+                        <span class="text-xl font-bold text-neutral-950">KES 12,350</span>
+                        <button class="p-2.5 bg-neutral-100 rounded-full hover:bg-amber-100 text-neutral-900 hover:text-amber-800 transition"><i class="fa-solid fa-cart-plus"></i></button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="product-card bg-white rounded-2xl overflow-hidden border border-neutral-100 hover:shadow-xl transition flex flex-col h-full" data-name="Royal Amber & Musk" data-origin="Gulf" data-notes="golden amber musk clean sweet">
+                <div class="bg-gradient-to-tr from-yellow-100 to-amber-50 h-56 flex items-center justify-center relative">
+                    <span class="absolute top-4 left-4 bg-yellow-600 text-white text-[10px] uppercase font-bold px-2.5 py-1 rounded-full">Gulf</span>
+                    <i class="fa-solid fa-gem text-yellow-500 text-5xl"></i>
+                </div>
+                <div class="p-6 flex flex-col flex-grow">
+                    <h3 class="font-serif font-bold text-lg mb-1">Royal Amber & Musk</h3>
+                    <p class="text-xs text-neutral-400 mb-3">Golden Scent Accord</p>
+                    <p class="text-sm text-neutral-500 flex-grow mb-4">A warm, soft premium blend of golden amber extracts and elegant clean white musk.</p>
+                    <div class="flex items-center justify-between mt-auto">
+                        <span class="text-xl font-bold text-neutral-950">KES 17,550</span>
+                        <button class="p-2.5 bg-neutral-100 rounded-full hover:bg-amber-100 text-neutral-900 hover:text-amber-800 transition"><i class="fa-solid fa-cart-plus"></i></button>                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Client Reviews Section -->
+    <section id="reviews" class="bg-amber-50/40 py-20 border-t border-neutral-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-serif font-semibold text-neutral-900 mb-2">What Our Clients Say</h2>
+                <p class="text-sm text-neutral-500">Real feedback from fragrance connoisseurs across Kenya</p>
+                <div class="w-12 h-1 bg-amber-600 mx-auto rounded-full mt-4"></div>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-2xl border border-neutral-100 shadow-sm">
+                    <div class="flex items-center gap-1 text-amber-500 mb-4">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-neutral-600 italic text-sm mb-6">"The Oudh Al Khaleej is exceptional. It has that authentic deep rich aroma that lasts for over 24 hours. The delivery to my office in Kilimani was incredibly fast!"</p>
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-full bg-neutral-200 flex items-center justify-center font-bold text-neutral-700 text-sm">FM</div>
+                        <div>
+                            <h4 class="font-bold text-sm text-neutral-950">Fatma Mohammed</h4>
+                            <p class="text-xs text-neutral-400">Nairobi Client</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white p-8 rounded-2xl border border-neutral-100 shadow-sm">
+                    <div class="flex items-center gap-1 text-amber-500 mb-4">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-neutral-600 italic text-sm mb-6">"The Tasmanian Lavender Mist is so soothing and crisp. It's unlike any generic synthetic sprays. It has become my signature fresh morning fragrance!"</p>
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-full bg-neutral-200 flex items-center justify-center font-bold text-neutral-700 text-sm">DK</div>
+                        <div>
+                            <h4 class="font-bold text-sm text-neutral-950">David Kiprop</h4>
+                            <p class="text-xs text-neutral-400">Eldoret Client</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white p-8 rounded-2xl border border-neutral-100 shadow-sm">
+                    <div class="flex items-center gap-1 text-amber-500 mb-4">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <p class="text-neutral-600 italic text-sm mb-6">"Amazing collection! I purchased the Royal Amber and Musk. The warm clean undertones are beautiful. M-Pesa automated prompt made checkout flawless."</p>
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-full bg-neutral-200 flex items-center justify-center font-bold text-neutral-700 text-sm">AO</div>
+                        <div>
+                            <h4 class="font-bold text-sm text-neutral-950">Achieng Onyango</h4>
+                            <p class="text-xs text-neutral-400">Kisumu Client</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Us Section -->
+    <section id="contact" class="bg-white py-20 border-t border-neutral-200">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-2 gap-12">
+                <div class="space-y-6">
+                    <h2 class="text-3xl font-serif font-semibold text-neutral-900">Connect with Scent Oasis</h2>
+                    <p class="text-neutral-500 text-sm leading-relaxed">Do you have any inquiries regarding custom orders, wholesale distribution, or specific bottle curation? Get in touch with our perfume connoisseurs directly. We deliver to all 47 counties in Kenya.</p>
+
+                    <div class="space-y-4 pt-4">
+                        <div class="flex items-center gap-4">
+                            <span class="w-10 h-10 rounded-full bg-amber-100 text-amber-800 flex items-center justify-center"><i class="fa-solid fa-phone"></i></span>
+                            <div>
+                                <p class="text-xs text-neutral-400 font-semibold uppercase">Phone Support</p>
+                                <p class="text-sm font-medium text-neutral-800">+254 712 345 678 / +254 722 000 000</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-4">
+                            <span class="w-10 h-10 rounded-full bg-amber-100 text-amber-800 flex items-center justify-center"><i class="fa-solid fa-envelope"></i></span>
+                            <div>
+                                <p class="text-xs text-neutral-400 font-semibold uppercase">Email Address</p>
+                                <p class="text-sm font-medium text-neutral-800">info@scentoasis.co.ke</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-4">
+                            <span class="w-10 h-10 rounded-full bg-amber-100 text-amber-800 flex items-center justify-center"><i class="fa-solid fa-map-location-dot"></i></span>
+                            <div>
+                                <p class="text-xs text-neutral-400 font-semibold uppercase">Showroom</p>
+                                <p class="text-sm font-medium text-neutral-800">Suite 4B, Kilimani Mall, Lenana Road, Nairobi</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <form class="bg-neutral-50 p-8 rounded-3xl border border-neutral-100 space-y-4" onsubmit="event.preventDefault(); alert('Thank you for contacting us! Our representative will call or email you shortly.'); this.reset();">
+                    <h3 class="text-lg font-bold font-serif mb-2">Send Us a Direct Message</h3>
+                    <div>
+                        <label class="block text-xs uppercase font-semibold text-neutral-400 mb-1">Your Name</label>
+                        <input type="text" required class="w-full px-4 py-2.5 border border-neutral-200 bg-white rounded-xl focus:outline-none focus:ring-2 focus:ring-amber-500/20 focus:border-amber-500 transition text-sm">
+                    </div>
+                    <div>
+                        <label class="block text-xs uppercase font-semibold text-neutral-400 mb-1">Email Address</label>
+                        <input type="email" required class="w-full px-4 py-2.5 border border-neutral-200 bg-white rounded-xl focus:outline-none focus:ring-2 focus:ring-amber-500/20 focus:border-amber-500 transition text-sm">
+                    </div>
+                    <div>
+                        <label class="block text-xs uppercase font-semibold text-neutral-400 mb-1">Message Details</label>
+                        <textarea rows="4" required class="w-full px-4 py-2.5 border border-neutral-200 bg-white rounded-xl focus:outline-none focus:ring-2 focus:ring-amber-500/20 focus:border-amber-500 transition text-sm"></textarea>
+                    </div>
+                    <button type="submit" class="w-full bg-amber-700 hover:bg-amber-800 text-white font-semibold py-3 rounded-xl transition shadow-lg shadow-amber-700/10 text-sm">
+                        Send Message
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Checkout Section -->
+    <section id="checkout" class="bg-neutral-100 py-20 border-t border-neutral-200">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-white rounded-3xl shadow-xl overflow-hidden grid md:grid-cols-5">
+
+                <!-- Order Summary -->
+                <div class="md:col-span-2 bg-neutral-950 text-white p-8 md:p-10 flex flex-col justify-between">
+                    <div>
+                        <h3 class="text-xl font-serif font-semibold mb-6">Your Fragrances</h3>
+                        <div class="space-y-4">
+                            <div class="flex justify-between border-b border-white/10 pb-3">
+                                <div>
+                                    <p class="text-sm font-medium">Tasmanian Lavender</p>
+                                    <p class="text-xs text-neutral-400">Qty: 2</p>
+                                </div>
+                                <span class="text-sm">KES 22,100</span>
+                            </div>
+                            <div class="flex justify-between border-b border-white/10 pb-3">
+                                <div>
+                                    <p class="text-sm font-medium">Oudh Al Khaleej</p>
+                                    <p class="text-xs text-neutral-400">Qty: 1</p>
+                                </div>
+                                <span class="text-sm">KES 19,500</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mt-8 space-y-3">
+                        <div class="flex justify-between text-neutral-300 text-sm">
+                            <span>Cart Subtotal</span>
+                            <span>KES 41,600</span>
+                        </div>
+                        <div class="flex justify-between text-neutral-300 text-sm">
+                            <span>Delivery Fee</span>
+                            <span id="delivery-display">KES 200</span>
+                        </div>
+                        <div class="flex justify-between text-lg font-semibold pt-3 border-t border-white/10">
+                            <span>Total</span>
+                            <span class="text-amber-400" id="total-display">KES 41,800</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Checkout Details Form -->
+                <form class="md:col-span-3 p-8 md:p-10 space-y-5" id="checkout-form">
+                    <h3 class="text-xl font-serif font-semibold text-neutral-900">Kenyan Delivery Details</h3>
+
+                    <div>
+                        <label class="block text-xs uppercase font-semibold text-neutral-400 mb-1">Full Name</label>
+                        <input type="text" placeholder="Jane Mwangi" required class="w-full px-4 py-2.5 border border-neutral-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-amber-500/20 focus:border-amber-500 transition text-sm">
+                    </div>
+
+                    <div>
+                        <label class="block text-xs uppercase font-semibold text-neutral-400 mb-1">Select Delivery County</label>
+                        <select id="county-select" class="w-full px-4 py-2.5 border border-neutral-200 bg-white rounded-xl focus:outline-none focus:ring-2 focus:ring-amber-500/20 focus:border-amber-500 transition text-sm">
+                            <option value="200" selected>Nairobi County - KES 200</option>
+                            <option value="300">Mombasa County - KES 300</option>
+                            <option value="400">Kisumu County - KES 400</option>
+                            <option value="300">Nakuru County - KES 300</option>
+                            <option value="250">Kiambu County - KES 250</option>
+                            <option value="450">Bungoma County - KES 450</option>
+                            <option value="400">Uasin Gishu County - KES 400</option>
+                            <option value="750">Turkana County - KES 750</option>
+                            <option value="800">Mandera County - KES 800</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label class="block text-xs uppercase font-semibold text-neutral-400 mb-1">Street Address Details</label>
+                        <input type="text" placeholder="Kilimani, Lenana Road" required class="w-full px-4 py-2.5 border border-neutral-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-amber-500/20 focus:border-amber-500 transition text-sm">
+                    </div>
+
+                    <!-- Payment Method Selector -->
+                    <div>
+                        <label class="block text-xs uppercase font-semibold text-neutral-400 mb-1.5">Payment Method</label>
+                        <div class="grid grid-cols-2 gap-3">
+                            <label class="border-2 border-amber-500 bg-amber-50/35 rounded-xl p-3 flex items-center justify-between cursor-pointer" id="pay-mpesa-label">
+                                <div class="flex items-center gap-2">
+                                    <span class="text-emerald-600 font-extrabold text-sm">M-PESA</span>
+                                </div>
+                                <input type="radio" name="payment_method" value="mpesa" checked class="text-amber-600 focus:ring-amber-500">
+                            </label>
+                            <label class="border border-neutral-200 rounded-xl p-3 flex items-center justify-between cursor-pointer" id="pay-cod-label">
+                                <span class="text-neutral-700 font-medium text-xs">Cash on Delivery</span>
+                                <input type="radio" name="payment_method" value="cod" class="text-amber-600 focus:ring-amber-500">
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- M-Pesa Phone Input with Native Validation -->
+                    <div id="mpesa-field">
+                        <label class="block text-xs uppercase font-semibold text-neutral-400 mb-1">M-Pesa Phone Number</label>
+                        <div class="relative">
+                            <span class="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none text-neutral-400 text-xs font-semibold">+254</span>
+                            <input type="tel" id="mpesa-phone" placeholder="712345678" class="w-full pl-14 pr-4 py-2.5 border border-neutral-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-amber-500/20 focus:border-amber-500 transition text-sm">
+                        </div>
+                        <span id="phone-error-msg" class="text-xs text-red-500 mt-1 hidden">Please enter a valid Kenyan phone format (e.g. 712345678 or 112345678)</span>
+                    </div>
+
+                    <button type="submit" class="w-full bg-emerald-600 hover:bg-emerald-700 text-white font-semibold py-3.5 rounded-xl transition shadow-lg shadow-emerald-600/10" id="submit-btn">
+                        <i class="fa-solid fa-mobile-screen-button mr-2"></i>Pay via Lipa Na M-PESA
+                    </button>
+                </form>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Script for Live Search, Dynamic Shipping and Payment Validation -->
+    <script>
+        const searchInput = document.getElementById('search-input');
+        const productCards = document.querySelectorAll('.product-card');
+
+        searchInput.addEventListener('input', (e) => {
+            const query = e.target.value.toLowerCase().trim();
+            productCards.forEach(card => {
+                const name = card.getAttribute('data-name').toLowerCase();
+                const origin = card.getAttribute('data-origin').toLowerCase();
+                const notes = card.getAttribute('data-notes').toLowerCase();
+                if (name.includes(query) || origin.includes(query) || notes.includes(query)) {
+                    card.style.display = 'flex';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        });
+
+        const select = document.getElementById('county-select');
+        const deliveryDisplay = document.getElementById('delivery-display');
+        const totalDisplay = document.getElementById('total-display');
+        const baseSubtotal = 41600;
+
+        select.addEventListener('change', (e) => {
+            const fee = parseInt(e.target.value);
+            deliveryDisplay.textContent = `KES ${fee.toLocaleString()}`;
+            totalDisplay.textContent = `KES ${(baseSubtotal + fee).toLocaleString()}`;
+        });
+
+        // Payment Selection Styling and Dynamic Trigger logic
+        const mpesaRadio = document.querySelector('input[value="mpesa"]');
+        const codRadio = document.querySelector('input[value="cod"]');
+        const mpesaLabel = document.getElementById('pay-mpesa-label');
+        const codLabel = document.getElementById('pay-cod-label');
+        const mpesaField = document.getElementById('mpesa-field');
+        const submitBtn = document.getElementById('submit-btn');
+        const mpesaPhone = document.getElementById('mpesa-phone');
+        const errorMsg = document.getElementById('phone-error-msg');
+
+        function togglePaymentMode() {
+            if (mpesaRadio.checked) {
+                mpesaLabel.className = "border-2 border-amber-500 bg-amber-50/35 rounded-xl p-3 flex items-center justify-between cursor-pointer";
+                codLabel.className = "border border-neutral-200 rounded-xl p-3 flex items-center justify-between cursor-pointer";
+                mpesaField.style.display = 'block';
+                mpesaPhone.setAttribute('required', 'true');
+                submitBtn.className = "w-full bg-emerald-600 hover:bg-emerald-700 text-white font-semibold py-3.5 rounded-xl transition shadow-lg shadow-emerald-600/10";
+                submitBtn.innerHTML = '<i class="fa-solid fa-mobile-screen-button mr-2"></i>Pay via Lipa Na M-PESA';
+            } else {
+                codLabel.className = "border-2 border-amber-500 bg-amber-50/35 rounded-xl p-3 flex items-center justify-between cursor-pointer";
+                mpesaLabel.className = "border border-neutral-200 rounded-xl p-3 flex items-center justify-between cursor-pointer";
+                mpesaField.style.display = 'none';
+                mpesaPhone.removeAttribute('required');
+                errorMsg.classList.add('hidden');
+                submitBtn.className = "w-full bg-amber-600 hover:bg-amber-700 text-white font-semibold py-3.5 rounded-xl transition shadow-lg shadow-amber-600/10";
+                submitBtn.innerHTML = '<i class="fa-solid fa-truck-fast mr-2"></i>Place Order (Cash on Delivery)';
+            }
+        }
+
+        mpesaRadio.addEventListener('change', togglePaymentMode);
+        codRadio.addEventListener('change', togglePaymentMode);
+
+        // Interactive Validation & Order Handler
+        document.getElementById('checkout-form').addEventListener('submit', (e) => {
+            e.preventDefault();
+            if (mpesaRadio.checked) {
+                const phoneVal = mpesaPhone.value.trim().replace(/\s+/g, '');
+                // Validate pattern matching either 9 digits starting with 7/1 or 12 digits starting with 254
+                const cleanPhonePattern = /^254(7|1)\d{8}$|^0?(7|1)\d{8}$/;
+                if (!cleanPhonePattern.test(phoneVal)) {
+                    errorMsg.classList.remove('hidden');
+                    mpesaPhone.focus();
+                    return;
+                }
+                errorMsg.classList.add('hidden');
+                const formattedNum = phoneVal.startsWith('254') ? phoneVal : '254' + (phoneVal.startsWith('0') ? phoneVal.slice(1) : phoneVal);
+                alert(`Lipa Na M-PESA STK Push has been triggered successfully to +${formattedNum}!\nPlease check your phone screen for the prompt and enter your M-PESA PIN.`);
+            } else {
+                alert('Cash on Delivery order successfully logged! Scent Oasis will dispatch your products shortly.');
+            }
+        });
+    </script>
+</body>
+</html>
